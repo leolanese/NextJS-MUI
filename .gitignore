@@ -36,3 +36,4 @@ yarn-error.log*
 /node_modules
 /.next
 .history/
+package-lock.json
