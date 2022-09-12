@@ -15,7 +15,10 @@ const MyApp = (props) => {
   return (
     <CacheProvider value={emotionCache}>
       <ThemeProvider theme={lightTheme}>
+        
+        {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />
+        
         <Component {...pageProps} />
       </ThemeProvider>
     </CacheProvider>
