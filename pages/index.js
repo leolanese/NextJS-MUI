@@ -1,8 +1,8 @@
+import "@fontsource/roboto";
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from "next/link";
 import styles from '../styles/Home.module.css';
-import "@fontsource/roboto";
 
 export default function Home() {
   return (
@@ -33,6 +33,11 @@ export default function Home() {
           <li>
             <Link href="/example-3">
               <a>MUI example 3</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/example-4">
+              <a>MUI example 4</a>
             </Link>
           </li>
         </ul>
