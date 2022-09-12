@@ -89,6 +89,9 @@ const ImageMarked = styled("span")(({ theme }) => ({
 function Example2() {
   return (
     <div>
+      <div style={{ margin: 30 }}>
+      <hr></hr>
+      <h2>Multi options</h2>
       <Box
         sx={{
           display: "flex",
@@ -126,6 +129,7 @@ function Example2() {
           </ImageButton>
         ))}
       </Box>
+      </div>
     </div>
   );
 }

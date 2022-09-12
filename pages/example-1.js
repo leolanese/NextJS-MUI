@@ -45,287 +45,323 @@ function Example1() {
   
   return (
     <div>
-      <hr></hr>
-      <h2>Basic button</h2>
-      <Stack spacing={2} direction="row">
-        <Button variant="text">Text</Button>
+
+      
+      <div style={{ margin: 30 }}>
+        <hr></hr>
+        <h2>Basic button</h2>
+        <Stack spacing={2} direction="row">
+          <Button variant="text">Text</Button>
+          <Button variant="contained">Contained</Button>
+          <Button variant="outlined">Outlined</Button>
+        </Stack>
+      </div>
+
+      <div style={{ margin: 30 }}>
+        <hr></hr>
+        <h2>Text button</h2>
+        <Button>Primary</Button>
+        <Button disabled>Disabled</Button>
+        <Button href="#text-buttons">Link</Button>
+      </div>
+
+      <div style={{ margin: 30 }}>
+        <hr></hr>
+        <h2>Contained button</h2>
         <Button variant="contained">Contained</Button>
-        <Button variant="outlined">Outlined</Button>
-      </Stack>
+        <Button variant="contained" disabled>
+          Disabled
+        </Button>
+        <Button variant="contained" href="#contained-buttons">
+          Link
+        </Button>
+      </div>  
 
-      <hr></hr>
-      <h2>Text button</h2>
-      <Button>Primary</Button>
-      <Button disabled>Disabled</Button>
-      <Button href="#text-buttons">Link</Button>
+      <div style={{ margin: 30 }}>
+        <hr></hr>
+        <h2>disableElevation</h2>
+        <Button variant="contained" disableElevation>
+          Disable elevation
+        </Button>
+      </div>
 
-      <hr></hr>
-      <h2>Contained button</h2>
-      <Button variant="contained">Contained</Button>
-      <Button variant="contained" disabled>
-        Disabled
-      </Button>
-      <Button variant="contained" href="#contained-buttons">
-        Link
-      </Button>
+      <div style={{ margin: 30 }}>
+        <hr></hr>
+        <h2>Outlined button</h2>
+        <Button variant="outlined">Primary</Button>
+        <Button variant="outlined" disabled>
+          Disabled
+        </Button>
+        <Button variant="outlined" href="#outlined-buttons">
+          Link
+        </Button>
+      </div>
 
-      <hr></hr>
-      <h2>disableElevation</h2>
-      <Button variant="contained" disableElevation>
-        Disable elevation
-      </Button>
+      <div style={{ margin: 30 }}>
+        <hr></hr>
+        <h2>Handling clicks</h2>
+        <Button
+          onClick={() => {
+            alert("clicked");
+          }}
+        >
+          Click me
+        </Button>
+      </div>
 
-      <hr></hr>
-      <h2>Outlined button</h2>
-      <Button variant="outlined">Primary</Button>
-      <Button variant="outlined" disabled>
-        Disabled
-      </Button>
-      <Button variant="outlined" href="#outlined-buttons">
-        Link
-      </Button>
+      <div style={{ margin: 30 }}>
+        <hr></hr>
+        <h2>Colour</h2>
+        <Button color="secondary">Secondary</Button>
+        <Button variant="contained" color="success">
+          Success
+        </Button>
+        <Button variant="outlined" color="error">
+          Error
+        </Button>
+      </div>
 
-      <hr></hr>
-      <h2>Handling clicks</h2>
-      <Button
-        onClick={() => {
-          alert("clicked");
-        }}
-      >
-        Click me
-      </Button>
+      <div style={{ margin: 30 }}>
+        <hr></hr>
+        <h2>Sizes</h2>
+        <Box sx={{ "& button": { m: 1 } }}>
+          <div>
+            <Button size="small">Small</Button>
+            <Button size="medium">Medium</Button>
+            <Button size="large">Large</Button>
+          </div>
+          <div>
+            <Button variant="outlined" size="small">
+              Small
+            </Button>
+            <Button variant="outlined" size="medium">
+              Medium
+            </Button>
+            <Button variant="outlined" size="large">
+              Large
+            </Button>
+          </div>
+          <div>
+            <Button variant="contained" size="small">
+              Small
+            </Button>
+            <Button variant="contained" size="medium">
+              Medium
+            </Button>
+            <Button variant="contained" size="large">
+              Large
+            </Button>
+          </div>
+        </Box>
+      </div>  
 
-      <hr></hr>
-      <h2>Colour</h2>
-      <Button color="secondary">Secondary</Button>
-      <Button variant="contained" color="success">
-        Success
-      </Button>
-      <Button variant="outlined" color="error">
-        Error
-      </Button>
+      <div style={{ margin: 30 }}>
+        <hr></hr>
+        <h2>Upload button</h2>
+        <Button variant="contained" component="label">
+          Upload
+          <input hidden accept="image/*" multiple type="file" />
+        </Button>
+        <IconButton color="primary" aria-label="upload picture" component="label">
+          <input hidden accept="image/*" type="file" />
+          <PhotoCamera />
+        </IconButton>
+      </div>  
 
-      <hr></hr>
-      <h2>Sizes</h2>
-      <Box sx={{ "& button": { m: 1 } }}>
-        <div>
-          <Button size="small">Small</Button>
-          <Button size="medium">Medium</Button>
-          <Button size="large">Large</Button>
-        </div>
-        <div>
-          <Button variant="outlined" size="small">
-            Small
-          </Button>
-          <Button variant="outlined" size="medium">
-            Medium
-          </Button>
-          <Button variant="outlined" size="large">
-            Large
-          </Button>
-        </div>
-        <div>
-          <Button variant="contained" size="small">
-            Small
-          </Button>
-          <Button variant="contained" size="medium">
-            Medium
-          </Button>
-          <Button variant="contained" size="large">
-            Large
-          </Button>
-        </div>
-      </Box>
+      <div style={{ margin: 30 }}>
+        <hr></hr>
+        <h2>Buttons with icons and label</h2>
+        <Button variant="outlined" startIcon={<DeleteIcon />}>
+          Delete
+        </Button>
+        <Button variant="contained" endIcon={<SendIcon />}>
+          Send
+        </Button>
+      </div>  
 
-      <hr></hr>
-      <h2>Upload button</h2>
-      <Button variant="contained" component="label">
-        Upload
-        <input hidden accept="image/*" multiple type="file" />
-      </Button>
-      <IconButton color="primary" aria-label="upload picture" component="label">
-        <input hidden accept="image/*" type="file" />
-        <PhotoCamera />
-      </IconButton>
+      <div style={{ margin: 30 }}>
+        <hr></hr>
+        <h2>Icons</h2>
+        <IconButton aria-label="delete">
+          <DeleteIcon />
+        </IconButton>
+        <IconButton aria-label="delete" disabled color="primary">
+          <DeleteIcon />
+        </IconButton>
+        <IconButton color="secondary" aria-label="add an alarm">
+          <AlarmIcon />
+        </IconButton>
+        <IconButton color="primary" aria-label="add to shopping cart">
+          <AddShoppingCartIcon />
+        </IconButton>
+        <IconButton color="primary" aria-label="add to access">
+          <AppsIcon />
+        </IconButton>
+        <IconButton color="primary" aria-label="add to access">
+          <AccountCircleIcon />
+        </IconButton>
+      </div>
+      
+      <div style={{ margin: 30 }}>
+        <hr></hr>
+        <h2>Icons sizes</h2>
+        <IconButton aria-label="delete" size="small">
+          <DeleteIcon fontSize="inherit" />
+        </IconButton>
+        <IconButton aria-label="delete" size="small">
+          <DeleteIcon fontSize="small" />
+        </IconButton>
+        <IconButton aria-label="delete" size="large">
+          <DeleteIcon />
+        </IconButton>
+        <IconButton aria-label="delete" size="large">
+          <DeleteIcon fontSize="inherit" />
+        </IconButton>
+      </div>
 
-      <hr></hr>
-      <h2>Buttons with icons and label</h2>
-      <Button variant="outlined" startIcon={<DeleteIcon />}>
-        Delete
-      </Button>
-      <Button variant="contained" endIcon={<SendIcon />}>
-        Send
-      </Button>
+      <div style={{ margin: 30 }}>
+        <hr></hr>
+        <h2>Icons Colours</h2>
+        <IconButton aria-label="DeleteIcon" color="secondary">
+          <DeleteIcon />
+        </IconButton>
+        <IconButton aria-label="DeleteIcon" color="success">
+          <DeleteIcon />
+        </IconButton>
+      </div>
 
-      <hr></hr>
-      <h2>Icons</h2>
-      <IconButton aria-label="delete">
-        <DeleteIcon />
-      </IconButton>
-      <IconButton aria-label="delete" disabled color="primary">
-        <DeleteIcon />
-      </IconButton>
-      <IconButton color="secondary" aria-label="add an alarm">
-        <AlarmIcon />
-      </IconButton>
-      <IconButton color="primary" aria-label="add to shopping cart">
-        <AddShoppingCartIcon />
-      </IconButton>
-      <IconButton color="primary" aria-label="add to access">
-        <AppsIcon />
-      </IconButton>
-      <IconButton color="primary" aria-label="add to access">
-        <AccountCircleIcon />
-      </IconButton>
+      <div style={{ margin: 30 }}>
+        <hr></hr>
+        <Box sx={{ minWidth: 120 }}>
+          <FormControl fullWidth>
+            <InputLabel id="demo-simple-select-label">Age</InputLabel>
+            <Select
+              labelId="demo-simple-select-label"
+              id="demo-simple-select"
+              value={age}
+              label="Age"
+              onChange={handleChange}
+            >
+              <MenuItem value={10}>Ten</MenuItem>
+              <MenuItem value={20}>Twenty</MenuItem>
+              <MenuItem value={30}>Thirty</MenuItem>
+            </Select>
+          </FormControl>
+        </Box>
+      </div>  
 
-      <hr></hr>
-      <h2>Icons sizes</h2>
-      <IconButton aria-label="delete" size="small">
-        <DeleteIcon fontSize="inherit" />
-      </IconButton>
-      <IconButton aria-label="delete" size="small">
-        <DeleteIcon fontSize="small" />
-      </IconButton>
-      <IconButton aria-label="delete" size="large">
-        <DeleteIcon />
-      </IconButton>
-      <IconButton aria-label="delete" size="large">
-        <DeleteIcon fontSize="inherit" />
-      </IconButton>
-
-      <hr></hr>
-      <h2>Icons Colours</h2>
-      <IconButton aria-label="DeleteIcon" color="secondary">
-        <DeleteIcon />
-      </IconButton>
-      <IconButton aria-label="DeleteIcon" color="success">
-        <DeleteIcon />
-      </IconButton>
-
-      <hr></hr>
-      <Box sx={{ minWidth: 120 }}>
-        <FormControl fullWidth>
-          <InputLabel id="demo-simple-select-label">Age</InputLabel>
+      <div style={{ margin: 30 }}>
+        <hr></hr>
+        <FormControl sx={{ m: 1, minWidth: 120 }} disabled>
+          <InputLabel id="demo-simple-select-disabled-label">Age</InputLabel>
           <Select
-            labelId="demo-simple-select-label"
-            id="demo-simple-select"
+            labelId="demo-simple-select-disabled-label"
+            id="demo-simple-select-disabled"
             value={age}
             label="Age"
             onChange={handleChange}
           >
+            <MenuItem value="">
+              <em>None</em>
+            </MenuItem>
             <MenuItem value={10}>Ten</MenuItem>
             <MenuItem value={20}>Twenty</MenuItem>
             <MenuItem value={30}>Thirty</MenuItem>
           </Select>
+          <FormHelperText>Disabled</FormHelperText>
         </FormControl>
-      </Box>
+        <FormControl sx={{ m: 1, minWidth: 120 }} error>
+          <InputLabel id="demo-simple-select-error-label">Age</InputLabel>
+          <Select
+            labelId="demo-simple-select-error-label"
+            id="demo-simple-select-error"
+            value={age}
+            label="Age"
+            onChange={handleChange}
+            renderValue={(value) => `⚠️  - ${value}`}
+          >
+            <MenuItem value="">
+              <em>None</em>
+            </MenuItem>
+            <MenuItem value={10}>Ten</MenuItem>
+            <MenuItem value={20}>Twenty</MenuItem>
+            <MenuItem value={30}>Thirty</MenuItem>
+          </Select>
+          <FormHelperText>Error</FormHelperText>
+        </FormControl>
+        <FormControl sx={{ m: 1, minWidth: 120 }}>
+          <InputLabel id="demo-simple-select-readonly-label">Age</InputLabel>
+          <Select
+            labelId="demo-simple-select-readonly-label"
+            id="demo-simple-select-readonly"
+            value={age}
+            label="Age"
+            onChange={handleChange}
+            inputProps={{ readOnly: true }}
+          >
+            <MenuItem value="">
+              <em>None</em>
+            </MenuItem>
+            <MenuItem value={10}>Ten</MenuItem>
+            <MenuItem value={20}>Twenty</MenuItem>
+            <MenuItem value={30}>Thirty</MenuItem>
+          </Select>
+          <FormHelperText>Read only</FormHelperText>
+        </FormControl>
+        <FormControl required sx={{ m: 1, minWidth: 120 }}>
+          <InputLabel id="demo-simple-select-required-label">Age</InputLabel>
+          <Select
+            labelId="demo-simple-select-required-label"
+            id="demo-simple-select-required"
+            value={age}
+            label="Age *"
+            onChange={handleChange}
+          >
+            <MenuItem value="">
+              <em>None</em>
+            </MenuItem>
+            <MenuItem value={10}>Ten</MenuItem>
+            <MenuItem value={20}>Twenty</MenuItem>
+            <MenuItem value={30}>Thirty</MenuItem>
+          </Select>
+          <FormHelperText>Required</FormHelperText>
+        </FormControl>
+      </div>
 
-      <hr></hr>
-      <FormControl sx={{ m: 1, minWidth: 120 }} disabled>
-        <InputLabel id="demo-simple-select-disabled-label">Age</InputLabel>
-        <Select
-          labelId="demo-simple-select-disabled-label"
-          id="demo-simple-select-disabled"
-          value={age}
-          label="Age"
-          onChange={handleChange}
-        >
-          <MenuItem value="">
-            <em>None</em>
-          </MenuItem>
-          <MenuItem value={10}>Ten</MenuItem>
-          <MenuItem value={20}>Twenty</MenuItem>
-          <MenuItem value={30}>Thirty</MenuItem>
-        </Select>
-        <FormHelperText>Disabled</FormHelperText>
-      </FormControl>
-      <FormControl sx={{ m: 1, minWidth: 120 }} error>
-        <InputLabel id="demo-simple-select-error-label">Age</InputLabel>
-        <Select
-          labelId="demo-simple-select-error-label"
-          id="demo-simple-select-error"
-          value={age}
-          label="Age"
-          onChange={handleChange}
-          renderValue={(value) => `⚠️  - ${value}`}
-        >
-          <MenuItem value="">
-            <em>None</em>
-          </MenuItem>
-          <MenuItem value={10}>Ten</MenuItem>
-          <MenuItem value={20}>Twenty</MenuItem>
-          <MenuItem value={30}>Thirty</MenuItem>
-        </Select>
-        <FormHelperText>Error</FormHelperText>
-      </FormControl>
-      <FormControl sx={{ m: 1, minWidth: 120 }}>
-        <InputLabel id="demo-simple-select-readonly-label">Age</InputLabel>
-        <Select
-          labelId="demo-simple-select-readonly-label"
-          id="demo-simple-select-readonly"
-          value={age}
-          label="Age"
-          onChange={handleChange}
-          inputProps={{ readOnly: true }}
-        >
-          <MenuItem value="">
-            <em>None</em>
-          </MenuItem>
-          <MenuItem value={10}>Ten</MenuItem>
-          <MenuItem value={20}>Twenty</MenuItem>
-          <MenuItem value={30}>Thirty</MenuItem>
-        </Select>
-        <FormHelperText>Read only</FormHelperText>
-      </FormControl>
-      <FormControl required sx={{ m: 1, minWidth: 120 }}>
-        <InputLabel id="demo-simple-select-required-label">Age</InputLabel>
-        <Select
-          labelId="demo-simple-select-required-label"
-          id="demo-simple-select-required"
-          value={age}
-          label="Age *"
-          onChange={handleChange}
-        >
-          <MenuItem value="">
-            <em>None</em>
-          </MenuItem>
-          <MenuItem value={10}>Ten</MenuItem>
-          <MenuItem value={20}>Twenty</MenuItem>
-          <MenuItem value={30}>Thirty</MenuItem>
-        </Select>
-        <FormHelperText>Required</FormHelperText>
-      </FormControl>
+      <div style={{ margin: 30 }}>
+        <hr></hr>
+        <Switch {...label} defaultChecked />
+        <Switch {...label} defaultChecked color="secondary" />
+        <Switch {...label} defaultChecked color="warning" />
+        <Switch {...label} defaultChecked color="default" />
+        <GreenSwitch {...label} defaultChecked />
+      </div>  
 
-      <hr></hr>
-      <Switch {...label} defaultChecked />
-      <Switch {...label} defaultChecked color="secondary" />
-      <Switch {...label} defaultChecked color="warning" />
-      <Switch {...label} defaultChecked color="default" />
-      <GreenSwitch {...label} defaultChecked />
-
-      <hr></hr>
-      <Box
-        component="form"
-        sx={{
-          "& > :not(style)": { m: 1, width: "25ch" },
-        }}
-        noValidate
-        autoComplete="off"
-      >
-        <TextField label="Outlined secondary" color="secondary" focused />
-        <TextField
-          label="Filled success"
-          variant="filled"
-          color="success"
-          focused
-        />
-        <TextField
-          label="Standard warning"
-          variant="standard"
-          color="warning"
-          focused
-        />
-      </Box>
+      <div style={{ margin: 30 }}>
+        <hr></hr>
+        <Box
+          component="form"
+          sx={{
+            "& > :not(style)": { m: 1, width: "25ch" },
+          }}
+          noValidate
+          autoComplete="off"
+        >
+          <TextField label="Outlined secondary" color="secondary" focused />
+          <TextField
+            label="Filled success"
+            variant="filled"
+            color="success"
+            focused
+          />
+          <TextField
+            label="Standard warning"
+            variant="standard"
+            color="warning"
+            focused
+          />
+        </Box>
+      </div>  
       
     </div>
   );
