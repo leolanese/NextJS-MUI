@@ -20,32 +20,34 @@ const StyledRating = styled(Rating)({
 function Example3() {
   return (
     <div>
-      <hr></hr>
-      <h2>Custom icon and color</h2>
-      <Box
-        sx={{
-          "& > legend": { mt: 2 },
-        }}
-      >
-        <Typography component="legend">Custom icon and color</Typography>
-
-        <StyledRating
-          name="customized-color"
-          defaultValue={2}
-          getLabelText={(value) => `${value} Heart${value !== 1 ? "s" : ""}`}
-          precision={0.5}
-          icon={<FavoriteIcon fontSize="inherit" />}
-          emptyIcon={<FavoriteBorderIcon fontSize="inherit" />}
-        />
-
-        <Typography component="legend">10 stars</Typography>
-
-        <Rating name="customized-10" defaultValue={2} max={10} />
-      </Box>
-
-      <hr></hr>
-      <h2>Button categories</h2>
       <div style={{ margin: 30 }}>
+        <hr></hr>
+        <h2>Custom icon and color</h2>
+        <Box
+          sx={{
+            "& > legend": { mt: 2 },
+          }}
+        >
+          <Typography component="legend">Custom icon and color</Typography>
+
+          <StyledRating
+            name="customized-color"
+            defaultValue={2}
+            getLabelText={(value) => `${value} Heart${value !== 1 ? "s" : ""}`}
+            precision={0.5}
+            icon={<FavoriteIcon fontSize="inherit" />}
+            emptyIcon={<FavoriteBorderIcon fontSize="inherit" />}
+          />
+
+          <Typography component="legend">10 stars</Typography>
+
+          <Rating name="customized-10" defaultValue={2} max={10} />
+        </Box>
+      </div>
+
+      <div style={{ margin: 30 }}>
+        <hr></hr>
+        <h2>Button categories</h2>
         <Button variant="text" color="primary">
           Hello World
         </Button>
@@ -57,9 +59,9 @@ function Example3() {
         </Button>
       </div>
 
-      <hr></hr>
-      <h2>Button & SVG</h2>
       <div style={{ margin: 30 }}>
+        <hr></hr>
+        <h2>Button & SVG</h2>
         <div>
           <Button variant="text" color="primary">
             Hello World
