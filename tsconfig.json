@@ -22,7 +22,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "styles/theme/lightTheme.js"  ],
   "exclude": [
     "node_modules"
   ]
