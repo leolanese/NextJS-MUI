@@ -8,7 +8,7 @@ import createEmotionCache from '../utility/createEmotionCache';
 
 const clientSideEmotionCache = createEmotionCache();
 
-const MyApp = (props) => {
+const MyApp = (props: {Component: any; emotionCache?: any; pageProps: any;}) => {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
 
   return (

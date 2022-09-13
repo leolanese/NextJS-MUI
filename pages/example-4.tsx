@@ -9,7 +9,7 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Image from "next/future/image";
-import React,{useState} from "react";
+import {useState} from "react";
 import img from "../imgs/test.png";
 
 function createData1(index = 0, tutorial = '', link = '') {
