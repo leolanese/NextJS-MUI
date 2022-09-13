@@ -18,9 +18,7 @@ function createData(index = 0, tutorial = '', link = '') {
 const rows = [
     createData(1,'A','1',),
     createData(2,'B','2',),
-    createData(3,'C',
-'3',
-    ),
+    createData(3,'C','3',),
 ]
 
 function Example3() {
@@ -28,7 +26,6 @@ function Example3() {
 
   return (
     <div>
-      
       <div style={{ margin: 30 }}>
         <hr></hr>
         <h2>Counter</h2>
@@ -56,54 +53,45 @@ function Example3() {
         <Image src={img} width={520} height={280} />
       </div>
 
-      <div>
-           <div
-                className="head"
-                style={{
-                    width: 'fit-content',
-                    margin: 'auto',
-                }}
-            >
-                <h1
-                    style={{
-                        color: 'green',
-                    }}
-                >
-                    GeeksforGeeks
-                </h1>
-                <strong>React MUI TableContainer API</strong>
-            </div>
-  
-            <TableContainer component={Paper}>
-                <Table sx={{ minWidth: 650 }}>
-                    <TableHead>
-                        <TableRow>
-                            <TableCell>Sl. No.</TableCell>
-                            <TableCell align="center">
-                                Tutorial(Center Align)</TableCell>
-                            <TableCell>Link</TableCell>
-                        </TableRow>
-                    </TableHead>
-                    <TableBody>
-                        {rows.map((row, index) => (
-                            <TableRow key={row.name}>
-                                <TableCell component="th" scope="row">
-                                    {row.index}
-                                </TableCell>
-                                <TableCell align="center">
-                                    {row.tutorial}</TableCell>
-                                <TableCell>
-                                    <a href={row.link} target="_blank">
-                                        {row.link}
-                                    </a>
-                                </TableCell>
-                            </TableRow>
-                        ))}
-                    </TableBody>
-                </Table>
-            </TableContainer>
+      <div style={{ margin: 30 }}>
+        <hr></hr>
+        <div
+          className="head"
+          style={{
+            width: "fit-content",
+            margin: "auto",
+          }}
+        >
+          <h1>React MUI Table</h1>
         </div>
 
+        <TableContainer component={Paper}>
+          <Table sx={{ minWidth: 650 }}>
+            <TableHead>
+              <TableRow>
+                <TableCell>Sl. No.</TableCell>
+                <TableCell align="center">Tutorial(Center Align)</TableCell>
+                <TableCell>Link</TableCell>
+              </TableRow>
+            </TableHead>
+            <TableBody>
+              {rows.map((row, index) => (
+                <TableRow key={row.name}>
+                  <TableCell component="th" scope="row">
+                    {row.index}
+                  </TableCell>
+                  <TableCell align="center">{row.tutorial}</TableCell>
+                  <TableCell>
+                    <a href={row.link} target="_blank">
+                      {row.link}
+                    </a>
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </TableContainer>
+      </div>
     </div>
   );
 }
