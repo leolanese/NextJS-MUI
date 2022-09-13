@@ -130,7 +130,7 @@ function Example3() {
 
       <div style={{ margin: 30 }}>
         <hr></hr>
-        <h1></h1>
+        <h1>Table sorting</h1>
         <TableContainer component={Paper}>
           <Table aria-label="simple table">
             <TableHead>
