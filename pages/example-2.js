@@ -3,7 +3,7 @@ import ButtonBase from "@mui/material/ButtonBase";
 import {styled} from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
 import * as React from "react";
-import image from "../imgs/test.png";
+
 
 const images = [
   {
@@ -134,10 +134,10 @@ function Example2() {
 
       <div style={{ margin: 30 }}>
         <hr></hr>
-        <h2>Multi options</h2>
-        <div style={{ backgroundImage: `url(${image})` }}>Hello World</div>
+        <h2>Background image</h2>
+
       </div>
-  
+      
     </div>
   );
 }

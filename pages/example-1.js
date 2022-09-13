@@ -22,6 +22,16 @@ import * as React from 'react';
 import {pink} from "@mui/material/colors";
 import {alpha,styled} from "@mui/material/styles";
 
+function handleKeyPress(e) {
+  var key = e.key;
+  var regex = /[0-9]|\./;
+  if (!regex.test(key)) {
+    e.preventDefault();
+  } else {
+    console.log("You pressed a key: " + key);
+  }
+}
+
 function Example1() {
   const [age, setAge] = React.useState('');
 
@@ -45,8 +55,6 @@ function Example1() {
   
   return (
     <div>
-
-      
       <div style={{ margin: 30 }}>
         <hr></hr>
         <h2>Basic button</h2>
@@ -75,7 +83,7 @@ function Example1() {
         <Button variant="contained" href="#contained-buttons">
           Link
         </Button>
-      </div>  
+      </div>
 
       <div style={{ margin: 30 }}>
         <hr></hr>
@@ -153,7 +161,7 @@ function Example1() {
             </Button>
           </div>
         </Box>
-      </div>  
+      </div>
 
       <div style={{ margin: 30 }}>
         <hr></hr>
@@ -162,11 +170,15 @@ function Example1() {
           Upload
           <input hidden accept="image/*" multiple type="file" />
         </Button>
-        <IconButton color="primary" aria-label="upload picture" component="label">
+        <IconButton
+          color="primary"
+          aria-label="upload picture"
+          component="label"
+        >
           <input hidden accept="image/*" type="file" />
           <PhotoCamera />
         </IconButton>
-      </div>  
+      </div>
 
       <div style={{ margin: 30 }}>
         <hr></hr>
@@ -177,7 +189,7 @@ function Example1() {
         <Button variant="contained" endIcon={<SendIcon />}>
           Send
         </Button>
-      </div>  
+      </div>
 
       <div style={{ margin: 30 }}>
         <hr></hr>
@@ -201,7 +213,7 @@ function Example1() {
           <AccountCircleIcon />
         </IconButton>
       </div>
-      
+
       <div style={{ margin: 30 }}>
         <hr></hr>
         <h2>Icons sizes</h2>
@@ -232,6 +244,7 @@ function Example1() {
 
       <div style={{ margin: 30 }}>
         <hr></hr>
+        <h2>DropDown options</h2>
         <Box sx={{ minWidth: 120 }}>
           <FormControl fullWidth>
             <InputLabel id="demo-simple-select-label">Age</InputLabel>
@@ -248,10 +261,11 @@ function Example1() {
             </Select>
           </FormControl>
         </Box>
-      </div>  
+      </div>
 
       <div style={{ margin: 30 }}>
         <hr></hr>
+        <h2>FormControl & InputLabel</h2>
         <FormControl sx={{ m: 1, minWidth: 120 }} disabled>
           <InputLabel id="demo-simple-select-disabled-label">Age</InputLabel>
           <Select
@@ -330,15 +344,17 @@ function Example1() {
 
       <div style={{ margin: 30 }}>
         <hr></hr>
+        <h2>Switch</h2>
         <Switch {...label} defaultChecked />
         <Switch {...label} defaultChecked color="secondary" />
         <Switch {...label} defaultChecked color="warning" />
         <Switch {...label} defaultChecked color="default" />
         <GreenSwitch {...label} defaultChecked />
-      </div>  
+      </div>
 
       <div style={{ margin: 30 }}>
         <hr></hr>
+        <h2>Textfield</h2>
         <Box
           component="form"
           sx={{
@@ -347,7 +363,12 @@ function Example1() {
           noValidate
           autoComplete="off"
         >
-          <TextField label="Outlined secondary" color="secondary" focused />
+          <TextField
+            label="Outlined secondary"
+            color="secondary"
+            focused
+            onKeyPress={(e) => handleKeyPress(e)}
+          />
           <TextField
             label="Filled success"
             variant="filled"
@@ -361,8 +382,7 @@ function Example1() {
             focused
           />
         </Box>
-      </div>  
-      
+      </div>
     </div>
   );
 }
