@@ -1,3 +1,7 @@
+import ExpandMore from '@mui/icons-material/ExpandMore';
+import Accordion from '@mui/material/Accordion';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import AccordionSummary from '@mui/material/AccordionSummary';
 import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
@@ -24,8 +28,9 @@ export default function IndexPage({
   console.log({ stars, full_name });
   return (
     <>
-      <div style={{ margin: 30 }}>
-        <Card sx={{ minWidth: 275 }}>
+      <div style={{ margin: "3em" }}>
+        <h1>API request & Card with dropdown</h1>
+        <Card sx={{ backgroundColor: "#ededed", width: 350 }}>
           <CardContent>
             <Typography
               sx={{ fontSize: 34 }}
@@ -36,14 +41,27 @@ export default function IndexPage({
             </Typography>
 
             <Typography variant="body2" color="text.secondary">
-              By default, we use the combination of a div 
-              element and a background image to display the media.
+              By default, we use the combination of a div element and a
+              background image to display the media.
             </Typography>
           </CardContent>
-          <CardActions>
-            <Button size="small">Button</Button>
-            <Button size="small">Button</Button>
-          </CardActions>
+
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMore />}
+              aria-label="Expand"
+              aria-controls="-content"
+              id="-header"
+            >
+              <Typography>DropDown</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <CardActions>
+                <Button size="small">Button</Button>
+                <Button size="medium">Button</Button>
+              </CardActions>
+            </AccordionDetails>
+          </Accordion>
         </Card>
       </div>
     </>
