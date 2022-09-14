@@ -34,7 +34,7 @@ const rows2 = [
   createData2(5, "Mango", 1.5, 4)
 ];
 
-function Example3() {
+function Example4() {
   const [counter, setCounter] = useState(0);
 
   const [rowData, setRowData] = useState(rows2);
@@ -110,15 +110,15 @@ function Example3() {
               </TableRow>
             </TableHead>
             <TableBody>
-              {rows1.map((row, index) => (
-                <TableRow key={row.name}>
+              {rows1.map((row1, index) => (
+                <TableRow key={row1.index}>
                   <TableCell component="th" scope="row">
-                    {row.index}
+                    {row1.index}
                   </TableCell>
-                  <TableCell align="center">{row.tutorial}</TableCell>
+                  <TableCell align="center">{row1.tutorial}</TableCell>
                   <TableCell>
-                    <a href={row.link} target="_blank">
-                      {row.link}
+                    <a href={row1.link} target="_blank">
+                      {row1.link}
                     </a>
                   </TableCell>
                 </TableRow>
@@ -168,4 +168,4 @@ function Example3() {
   );
 }
 
-export default Example3;
+export default Example4;
