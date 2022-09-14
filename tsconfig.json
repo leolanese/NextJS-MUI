@@ -14,10 +14,10 @@
     "noEmit": true,
     "incremental": true,
     "esModuleInterop": true,
-    "module": "esnext",
+    "module": "commonjs",
     "isolatedModules": true,
     "jsx": "preserve",
-
+    "resolveJsonModule": true
   },
   "include": [
     "next-env.d.ts",
