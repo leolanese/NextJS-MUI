@@ -40,6 +40,11 @@ export default function Home() {
               <a>MUI example 4</a>
             </Link>
           </li>
+          <li>
+            <Link href="/example-5">
+              <a>MUI example 5</a>
+            </Link>
+          </li>
         </ul>
       </main>
 
