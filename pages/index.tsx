@@ -37,12 +37,12 @@ export default function Home() {
           </li>
           <li>
             <Link href="/example-4">
-              <a>MUI example 4</a>
+              <a>MUI TableContainer</a>
             </Link>
           </li>
           <li>
             <Link href="/example-5">
-              <a>MUI example 5</a>
+              <a>MUI: Card, CardContent, ,Typography</a>
             </Link>
           </li>
         </ul>
