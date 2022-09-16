@@ -29,7 +29,7 @@ function ComboBox() {
     <Autocomplete
       disablePortal
       id="combo-box-demo"
-      options={top100Films}
+      options={films}
       sx={{ width: 300 }}
       onChange={(a, b) => console.log(b.year)}
       renderInput={(params) => <TextField {...params} label="Movie" />}
@@ -39,7 +39,8 @@ function ComboBox() {
 
 function Example6() {
     return (
-      <div>
+      <div style={{ margin: 30 }}>
+        <h2>Typography, SVG & Link</h2>
         <Typography sx={{ mt: 6, mb: 3 }} color="text.secondary">
           <LightBulbIcon sx={{ mr: 1, verticalAlign: "middle" }} />
           Learning NextJS and MUI:{" "}
@@ -47,12 +48,13 @@ function Example6() {
           <LightBulbIcon sx={{ mr: 1, verticalAlign: "middle" }} />
         </Typography>
 
+        <h2>Container & Box</h2>
         <CssBaseline />
         <Container maxWidth="sm">
-          <Box sx={{ bgcolor: "blue", height: "1px"}} />
+          <Box sx={{ bgcolor: "blue", height: "1px" }} />
         </Container>
 
-
+        <h2>Combobox</h2>
         <ComboBox />
       </div>
     );
