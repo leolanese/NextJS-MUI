@@ -1,8 +1,9 @@
-import {Container,CssBaseline} from "@mui/material";
+import {Autocomplete,Container,CssBaseline,TextField} from "@mui/material";
 import Link from "@mui/material/Link";
 import SvgIcon,{SvgIconProps} from "@mui/material/SvgIcon";
 import Typography from "@mui/material/Typography";
 import {Box} from "@mui/system";
+import {films} from 'utility/data';
 
 function LightBulbIcon(props: SvgIconProps) {
   return (
@@ -23,6 +24,19 @@ function Containers() {
   );
 }
 
+function ComboBox() {
+  return (
+    <Autocomplete
+      disablePortal
+      id="combo-box-demo"
+      options={top100Films}
+      sx={{ width: 300 }}
+      onChange={(a, b) => console.log(b.year)}
+      renderInput={(params) => <TextField {...params} label="Movie" />}
+    />
+  );
+}
+
 function Example6() {
     return (
       <div>
@@ -37,6 +51,9 @@ function Example6() {
         <Container maxWidth="sm">
           <Box sx={{ bgcolor: "blue", height: "1px"}} />
         </Container>
+
+
+        <ComboBox />
       </div>
     );
 };
