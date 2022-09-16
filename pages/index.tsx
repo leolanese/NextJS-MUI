@@ -49,6 +49,11 @@ export default function Home() {
               <a>MUI: Card, CardContent, ,Typography</a>
             </Link>
           </li>
+          <li>
+            <Link href="/example-6">
+              <a>MUI: </a>
+            </Link>
+          </li>
         </ul>
       </main>
 
