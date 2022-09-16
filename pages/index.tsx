@@ -27,7 +27,7 @@ export default function Home() {
           </li>
           <li>
             <Link href="/example-2">
-              <a>MUI example 2</a>
+              <a>MUI Box, ButtonBase, Typography</a>
             </Link>
           </li>
           <li>
