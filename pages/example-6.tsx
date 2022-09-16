@@ -3,7 +3,7 @@ import Link from "@mui/material/Link";
 import SvgIcon,{SvgIconProps} from "@mui/material/SvgIcon";
 import Typography from "@mui/material/Typography";
 import {Box} from "@mui/system";
-import {films} from 'utility/data';
+import {films} from 'utility/films';
 
 function LightBulbIcon(props: SvgIconProps) {
   return (
