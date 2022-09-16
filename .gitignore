@@ -57,5 +57,5 @@ yarn-debug.log*
 yarn-error.log*
 
 /.next
-.history/
+/.history
 package-lock.json
