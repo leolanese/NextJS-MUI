@@ -32,12 +32,15 @@ export default function Home() {
           </li>
           <li>
             <Link href="/example-3">
-              <a>MUI example 3</a>
+              <a>
+                MUI Typography, StyledRating, Button, Rating, SendIcon,
+                FavoriteBorderIcon, FavoriteIcon
+              </a>
             </Link>
           </li>
           <li>
             <Link href="/example-4">
-              <a>MUI TableContainer</a>
+              <a>MUI TableContainer, Table, TableCell, TableRow</a>
             </Link>
           </li>
           <li>
