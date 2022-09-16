@@ -57,6 +57,14 @@ export default function Home() {
               </a>
             </Link>
           </li>
+          <li>
+            <Link href="/example-6">
+              <a>
+                MUI: Autocomplete, Typography, FormControl, InputLabel,
+                ListItemText, MenuItem, OutlinedInput, Select
+              </a>
+            </Link>
+          </li>
         </ul>
       </main>
 
