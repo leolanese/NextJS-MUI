@@ -22,7 +22,12 @@ export default function Home() {
           </li>
           <li>
             <Link href="/example-1">
-              <a>MUI example 1</a>
+              <a>
+                MUI AccountCircleIcon, AddShoppingCartIcon, AlarmIcon, AppsIcon
+                , DeleteIcon, PhotoCamera, SendIcon, Box, Button, IconButton,
+                Stack, FormControl, FormHelperText, InputLabel, MenuItem,
+                Select, Switch, TextField, 
+              </a>
             </Link>
           </li>
           <li>
