@@ -51,7 +51,10 @@ export default function Home() {
           </li>
           <li>
             <Link href="/example-6">
-              <a>MUI: </a>
+              <a>
+                MUI: Typography, SvgIcon, SvgIconProps, Container, Link,
+                CssBaseline,
+              </a>
             </Link>
           </li>
         </ul>
