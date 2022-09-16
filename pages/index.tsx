@@ -14,19 +14,15 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+        <h2>NextJS & MUI</h2>
         <ul>
-          <li>
-            <Link href="/">
-              <a>Landing</a>
-            </Link>
-          </li>
           <li>
             <Link href="/example-1">
               <a>
                 MUI AccountCircleIcon, AddShoppingCartIcon, AlarmIcon, AppsIcon
                 , DeleteIcon, PhotoCamera, SendIcon, Box, Button, IconButton,
                 Stack, FormControl, FormHelperText, InputLabel, MenuItem,
-                Select, Switch, TextField, 
+                Select, Switch, TextField,
               </a>
             </Link>
           </li>
