@@ -101,7 +101,7 @@ storiesOf("Button", module).add("with emoji", () => {
 
 ```js
 // Happy coding
-$ yarn storybook
+yarn storybook
 ```
 
 ## Setup Jest
@@ -173,7 +173,7 @@ yarn add -D @babel/preset-env @babel/preset-react @babel/preset-flow @babel/plug
 
 ```js
 /* root folder */
-$ touch babel.config.json
+touch babel.config.json
 ```
 
 ```js
@@ -238,6 +238,6 @@ describe("Pages", () => {
 ```
 
 ```js
-// happy coding
-$ yarn run test
+// Happy coding
+yarn run test
 ```
