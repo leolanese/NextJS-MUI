@@ -6,7 +6,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
+    "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest",
+    "storybook": "start-storybook -p 6006 -c .storybook"
   },
   "dependencies": {
     "@emotion/cache": "^11.7.1",

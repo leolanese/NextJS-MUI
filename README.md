@@ -91,3 +91,31 @@ storiesOf("Button", module).add("with emoji", () => {
   return <Button text="😀 😎 👍 💯" />;
 });
 ```
+
+## Update package.json
+
+```js
+// add npm script to package.json to start storybook
+"storybook": "start-storybook -p 6006 -c .storybook"
+```
+
+## Setup Jest
+
+```js
+yarn add -D jest @types/jest ts-jest babel-jest @types/enzyme enzyme enzyme-adapter-react-16
+```
+
+```js
+/* root folder */
+mkdir config
+touch config/setup.js
+```
+
+```js
+// setup.js
+const enzyme = require('enzyme');
+const Adapter = require('enzyme-adapter-react-16');
+
+enzyme.configure({ adapter: new Adapter() });
+```
+
