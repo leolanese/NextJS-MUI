@@ -3,6 +3,7 @@ import {CssBaseline,ThemeProvider} from "@mui/material";
 import Head from "next/head";
 import Script from "next/script";
 import PropTypes from "prop-types";
+import {useEffect} from "react";
 import '../styles/globals.css';
 import lightTheme from '../styles/theme/lightTheme';
 import createEmotionCache from '../utility/createEmotionCache';
@@ -11,6 +12,14 @@ const clientSideEmotionCache = createEmotionCache();
 
 const MyApp = (props: {Component: any; emotionCache?: any; pageProps: any;}) => {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
+
+  useEffect(() => {
+    // Remove the server-side injected CSS.
+    const jssStyles = document.querySelector("#jss-server-side");
+    if (jssStyles) {
+      jssStyles.parentElement.removeChild(jssStyles);
+    }
+  }, []);
 
   return (
     <>
