@@ -26,7 +26,6 @@
     "styles/theme/lightTheme.js"
   ],
   "exclude": [
-    "node_modules",
-    "imgs"
+    "node_modules"
   ]
 }
