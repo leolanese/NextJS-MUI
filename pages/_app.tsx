@@ -1,5 +1,6 @@
 import {CacheProvider} from "@emotion/react";
 import {CssBaseline,ThemeProvider} from "@mui/material";
+import Head from "next/head";
 import Script from "next/script";
 import PropTypes from "prop-types";
 import '../styles/globals.css';
@@ -13,6 +14,10 @@ const MyApp = (props: {Component: any; emotionCache?: any; pageProps: any;}) => 
 
   return (
     <>
+      <Head>
+        <title>NextJS & MUI</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <Script
         id="bootstrap-cdn"
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
@@ -22,6 +27,7 @@ const MyApp = (props: {Component: any; emotionCache?: any; pageProps: any;}) => 
       />
       <CacheProvider value={emotionCache}>
         <ThemeProvider theme={lightTheme}>
+
           {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
           <CssBaseline />
 
