@@ -67,7 +67,10 @@ export default function Home() {
           </li>
           <li>
             <Link href="/example-8">
-              <a>MUI: Autocomplete, Paper, TextField, CssBaseline</a>
+              <a>
+                MUI: Autocomplete, Paper, TextField, CssBaseline, Grid, Stack,
+                Stack, Box
+              </a>
             </Link>
           </li>
         </ul>
