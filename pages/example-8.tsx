@@ -2,9 +2,11 @@ import {Autocomplete,CssBaseline,Paper,TextField} from "@mui/material";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Stack from '@mui/material/Stack';
-import {styled,StyledEngineProvider} from "@mui/material/styles";
+import {styled,StyledEngineProvider,ThemeProvider} from "@mui/material/styles";
+import Typography from "@mui/material/Typography";
 import {useState} from "react";
 import {films} from 'utility/films';
+import {theme} from 'utility/theme';
 import Helper from "../utility/helper";
 
 const CustomPaper = ({ children, ...paperProps }) => (
@@ -125,6 +127,16 @@ function Example8() {
       <StyledEngineProvider injectFirst>
         <Helper />
       </StyledEngineProvider>
+
+      <CssBaseline />
+
+      <ThemeProvider theme={theme}>
+        <Typography variant="h1">Testing variant</Typography>
+        <Typography variant="h2">Testing variant</Typography>
+        <Typography variant="h3">Testing variant</Typography>
+        <Typography variant="body1">Lorem ipsum dolor sit amet</Typography>
+        <Typography variant="body2">Lorem ipsum dolor sit amet</Typography>
+      </ThemeProvider>
     </>
   );
 }

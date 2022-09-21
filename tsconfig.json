@@ -17,7 +17,8 @@
     "module": "commonjs",
     "isolatedModules": true,
     "jsx": "preserve",
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "moduleResolution": "node"
   },
   "include": [
     "next-env.d.ts",
