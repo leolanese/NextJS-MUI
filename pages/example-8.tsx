@@ -2,10 +2,10 @@ import {Autocomplete,CssBaseline,Paper,TextField} from "@mui/material";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Stack from '@mui/material/Stack';
-import {styled} from "@mui/material/styles";
+import {styled,StyledEngineProvider} from "@mui/material/styles";
 import {useState} from "react";
 import {films} from 'utility/films';
-
+import Helper from "../utility/helper";
 
 const CustomPaper = ({ children, ...paperProps }) => (
   <Paper elevation={15} {...paperProps} className="customAutoComplete">
@@ -28,17 +28,21 @@ function Example8() {
   return (
     <>
       <div style={{ margin: 30 }}>
-        <h1>Multi Option</h1>
-        <Stack spacing={3} sx={{ width: 500 }}>
+        <h1>Multi Tags Option</h1>
+        <Stack spacing={3} sx={{ width: 750 }}>
           <Autocomplete
             openOnFocus
             id={"autocomplete"}
             disableClearable
             multiple
             disableCloseOnSelect
+            id="tags-standard"
             isOptionEqualToValue={(o, v) => o.title == v.title}
             renderInput={(params) => (
-              <TextField {...params} placeholder={"Select a movie"} />
+              <TextField
+                {...params}
+                placeholder={"Select an existing facility"}
+              />
             )}
             onChange={(e, selected) => {
               setValues(selected);
@@ -47,7 +51,7 @@ function Example8() {
             options={[...films]}
             value={values}
             groupBy={(option) => option?.year ?? ""}
-            PaperComponent={CustomPaper}
+            componentsProps={{ paper: { elevation: 8 } }}
           />
         </Stack>
       </div>
@@ -117,6 +121,10 @@ function Example8() {
       </div>
 
       <CssBaseline />
+
+      <StyledEngineProvider injectFirst>
+        <Helper />
+      </StyledEngineProvider>
     </>
   );
 }

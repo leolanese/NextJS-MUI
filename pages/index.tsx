@@ -52,8 +52,8 @@ export default function Home() {
           <li>
             <Link href="/example-6">
               <a>
-                MUI: Autocomplete, Typography, SvgIcon, SvgIconProps, Container,
-                Link, CssBaseline,
+                MUI: FormControl, Autocomplete, Typography, SvgIcon,
+                SvgIconProps, Container, Link, CssBaseline, OutlinedInput
               </a>
             </Link>
           </li>
@@ -69,7 +69,7 @@ export default function Home() {
             <Link href="/example-8">
               <a>
                 MUI: Autocomplete, Paper, TextField, CssBaseline, Grid, Stack,
-                Stack, Box
+                Stack, Box, Paper
               </a>
             </Link>
           </li>
