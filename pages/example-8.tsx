@@ -16,6 +16,7 @@ function Example8() {
   return (
     <>
       <div style={{ margin: 30 }}>
+        <h1>Multi Option</h1>
         <Stack spacing={3} sx={{ width: 500 }}>
           <Autocomplete
             openOnFocus
@@ -23,7 +24,6 @@ function Example8() {
             disableClearable
             multiple
             disableCloseOnSelect
-            id="tags-standard"
             isOptionEqualToValue={(o, v) => o.title == v.title}
             renderInput={(params) => (
               <TextField {...params} placeholder={"Select a movie"} />
@@ -36,7 +36,6 @@ function Example8() {
             value={values}
             groupBy={(option) => option?.year ?? ""}
             PaperComponent={CustomPaper}
-            componentsProps={{ paper: { elevation: 12 } }}
           />
         </Stack>
         <CssBaseline />
