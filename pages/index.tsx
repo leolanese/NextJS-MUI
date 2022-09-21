@@ -58,11 +58,16 @@ export default function Home() {
             </Link>
           </li>
           <li>
-            <Link href="/example-6">
+            <Link href="/example-7">
               <a>
                 MUI: Autocomplete, Typography, FormControl, InputLabel,
-                ListItemText, MenuItem, OutlinedInput, Select
+                ListItemText, MenuItem, OutlinedInput, Select, CssBaseline
               </a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/example-8">
+              <a>MUI: Autocomplete, Paper, TextField, CssBaseline</a>
             </Link>
           </li>
         </ul>
