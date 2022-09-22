@@ -73,6 +73,15 @@ export default function Home() {
               </a>
             </Link>
           </li>
+
+          <li>
+            <Link href="/example-9">
+              <a>
+                MUI: Fetching API data, Table, TableContainer, TableHead, TableRow,
+                TableBody, TableCell
+              </a>
+            </Link>
+          </li>
         </ul>
       </main>
 
