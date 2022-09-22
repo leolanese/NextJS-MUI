@@ -10,6 +10,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Image from "next/future/image";
 import {useState} from "react";
+import {Back} from 'utility/helper';
 import img from "../imgs/test.png";
 
 function createData1(index = 0, tutorial = '', link = '') {
@@ -60,7 +61,8 @@ function Example4() {
   };
 
   return (
-    <div>
+    <>
+      <Back></Back>
       <div style={{ margin: 30 }}>
         <hr></hr>
         <h2>Counter</h2>
@@ -164,7 +166,7 @@ function Example4() {
         </TableContainer>
         </div>
         
-    </div>
+    </>
   );
 }
 

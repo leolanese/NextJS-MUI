@@ -6,7 +6,7 @@ import Button from "@mui/material/Button";
 import Rating from "@mui/material/Rating";
 import {styled} from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
-import * as React from "react";
+import {Back} from 'utility/helper';
 
 const StyledRating = styled(Rating)({
   "& .MuiRating-iconFilled": {
@@ -19,7 +19,8 @@ const StyledRating = styled(Rating)({
 
 function Example3() {
   return (
-    <div>
+    <>
+      <Back></Back>
       <div style={{ margin: 30 }}>
         <hr></hr>
         <h2>Custom icon and color</h2>
@@ -85,7 +86,8 @@ function Example3() {
           </Button>
         </div>
       </div>
-    </div>
+
+    </>
   );
 }
 

@@ -54,7 +54,8 @@ function Example1() {
   const label = { inputProps: { "aria-label": "Color switch demo" } };
   
   return (
-    <div>
+    <>
+      <Back></Back>
       <div style={{ margin: 30 }}>
         <hr></hr>
         <h2>Basic button</h2>
@@ -383,7 +384,7 @@ function Example1() {
           />
         </Box>
       </div>
-    </div>
+    </>
   );
 }
 

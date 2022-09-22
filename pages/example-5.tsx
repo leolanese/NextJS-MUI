@@ -28,6 +28,7 @@ export default function IndexPage({
   console.log({ stars, full_name });
   return (
     <>
+      <Back></Back>
       <div style={{ margin: "3em" }}>
         <h1>API request & Card with dropdown</h1>
         <Card sx={{ backgroundColor: "#ededed", width: 350 }}>

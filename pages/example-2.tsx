@@ -89,7 +89,8 @@ const ImageMarked = styled("span")(({ theme }) => ({
 
 function Example2() {
   return (
-    <div>
+    <>
+      <Back></Back>
       <div style={{ margin: 30 }}>
         <hr></hr>
         <h2>Multi options</h2>
@@ -138,7 +139,7 @@ function Example2() {
 
       </div>
       
-    </div>
+    </>
   );
 }
 
