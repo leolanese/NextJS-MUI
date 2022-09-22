@@ -87,7 +87,7 @@ function Example4() {
       <div style={{ margin: 30 }}>
         <hr></hr>
         <h2>Images</h2>
-        <Image src={img} width={520} height={280} />
+        <Image alt='info' src={img} width={520} height={280} />
       </div>
 
       <div style={{ margin: 30 }}>

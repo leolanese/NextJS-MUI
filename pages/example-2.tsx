@@ -1,9 +1,9 @@
+import {CssBaseline} from "@mui/material";
 import Box from "@mui/material/Box";
 import ButtonBase from "@mui/material/ButtonBase";
 import {styled} from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
-import * as React from "react";
-
+import {Back} from 'utility/helper';
 
 const images = [
   {
@@ -90,7 +90,8 @@ const ImageMarked = styled("span")(({ theme }) => ({
 function Example2() {
   return (
     <>
-      <Back></Back>
+      <Back />
+      <CssBaseline />
       <div style={{ margin: 30 }}>
         <hr></hr>
         <h2>Multi options</h2>

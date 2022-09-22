@@ -7,7 +7,7 @@ import Typography from "@mui/material/Typography";
 import {useState} from "react";
 import {films} from 'utility/films';
 import {theme} from 'utility/theme';
-import Helper from "../utility/helper";
+import Helper,{Back} from "../utility/helper";
 
 const CustomPaper = ({ children, ...paperProps }) => (
   <Paper elevation={15} {...paperProps} className="customAutoComplete">
@@ -29,7 +29,7 @@ function Example8() {
 
   return (
     <>
-      <Back></Back>
+      <Back />
       <div style={{ margin: 30 }}>
         <h1>Multi Tags Option</h1>
         <Stack spacing={3} sx={{ width: 750 }}>

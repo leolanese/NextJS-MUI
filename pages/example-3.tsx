@@ -20,7 +20,7 @@ const StyledRating = styled(Rating)({
 function Example3() {
   return (
     <>
-      <Back></Back>
+      <Back />
       <div style={{ margin: 30 }}>
         <hr></hr>
         <h2>Custom icon and color</h2>

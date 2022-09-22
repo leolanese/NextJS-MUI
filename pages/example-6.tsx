@@ -17,8 +17,6 @@ function LightBulbIcon(props: SvgIconProps) {
 function Containers() {
   return (
     <>
-      <Back></Back>
-      <CssBaseline />
       <Container maxWidth="sm">
         <Box sx={{ bgcolor: "blue", height: "10vh" }} />
       </Container>
@@ -42,6 +40,8 @@ function ComboBox() {
 function Example6() {
     return (
       <div style={{ margin: 30 }}>
+        <Back />
+        <CssBaseline />
         <h2>Typography, SVG & Link</h2>
         <Typography sx={{ mt: 6, mb: 3 }} color="text.secondary">
           <LightBulbIcon sx={{ mr: 1, verticalAlign: "middle" }} />

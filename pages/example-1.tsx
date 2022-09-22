@@ -10,17 +10,18 @@ import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import Stack from "@mui/material/Stack";
 
+import {CssBaseline} from "@mui/material";
+import {pink} from "@mui/material/colors";
 import FormControl from '@mui/material/FormControl';
 import FormHelperText from "@mui/material/FormHelperText";
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import Select from '@mui/material/Select';
+import {alpha,styled} from "@mui/material/styles";
 import Switch from "@mui/material/Switch";
 import TextField from "@mui/material/TextField";
 import * as React from 'react';
-
-import {pink} from "@mui/material/colors";
-import {alpha,styled} from "@mui/material/styles";
+import {Back} from 'utility/helper';
 
 function handleKeyPress(e) {
   var key = e.key;
@@ -55,7 +56,8 @@ function Example1() {
   
   return (
     <>
-      <Back></Back>
+      <Back />
+      <CssBaseline />
       <div style={{ margin: 30 }}>
         <hr></hr>
         <h2>Basic button</h2>

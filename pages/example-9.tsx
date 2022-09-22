@@ -5,7 +5,7 @@ const Example9 = () => {
   return (
     <>
       <div style={{ margin: 30 }}>
-        <Back></Back>
+        <Back />
         <h1>Fetching API data NextJS</h1>
         <ul>
           <li>

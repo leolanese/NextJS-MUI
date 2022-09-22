@@ -1,3 +1,4 @@
+import {CssBaseline} from "@mui/material";
 import Checkbox from "@mui/material/Checkbox";
 import FormControl from "@mui/material/FormControl";
 import InputLabel from "@mui/material/InputLabel";
@@ -6,6 +7,7 @@ import MenuItem from "@mui/material/MenuItem";
 import OutlinedInput from "@mui/material/OutlinedInput";
 import Select from "@mui/material/Select";
 import * as React from "react";
+import {Back} from 'utility/helper';
 import {variants} from 'utility/variants';
 
 const ITEM_HEIGHT = 48;
@@ -58,7 +60,8 @@ function Example7() {
 
   return (
     <>
-      <Back></Back>
+      <Back />
+      <CssBaseline />
       <FormControl sx={{ m: 1, width: 300 }}>
         <InputLabel id="demo-multiple-checkbox-label">Tag</InputLabel>
         <Select
