@@ -57,7 +57,8 @@ function Example7() {
   };
 
   return (
-    <div>
+    <>
+      <Back></Back>
       <FormControl sx={{ m: 1, width: 300 }}>
         <InputLabel id="demo-multiple-checkbox-label">Tag</InputLabel>
         <Select
@@ -78,7 +79,7 @@ function Example7() {
           ))}
         </Select>
       </FormControl>
-    </div>
+    </>
   );
 }
 

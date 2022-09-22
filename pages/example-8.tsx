@@ -29,6 +29,7 @@ function Example8() {
 
   return (
     <>
+      <Back></Back>
       <div style={{ margin: 30 }}>
         <h1>Multi Tags Option</h1>
         <Stack spacing={3} sx={{ width: 750 }}>

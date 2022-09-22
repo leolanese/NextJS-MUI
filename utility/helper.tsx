@@ -2,6 +2,7 @@ import Box from "@mui/material/Box";
 import FormControl,{useFormControl} from "@mui/material/FormControl";
 import FormHelperText from "@mui/material/FormHelperText";
 import OutlinedInput from "@mui/material/OutlinedInput";
+import Link from "next/link";
 import * as React from "react";
 
 function MyFormHelperText() {
@@ -29,4 +30,10 @@ export default function UseFormControl() {
       </FormControl>
     </Box>
   );
+}
+
+export function Back() {
+    return (
+      <Link href="/">Back</Link>
+    );
 }
