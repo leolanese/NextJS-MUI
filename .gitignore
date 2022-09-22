@@ -58,5 +58,5 @@ yarn-error.log*
 
 /.next
 /.history
-package-lock.json
 /.storybook
+package-lock.json
