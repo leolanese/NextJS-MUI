@@ -6,7 +6,7 @@ import Button from "@mui/material/Button";
 import Rating from "@mui/material/Rating";
 import {styled} from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
-import {Back} from 'utility/helper';
+import {Back} from 'utility/Back';
 
 const StyledRating = styled(Rating)({
   "& .MuiRating-iconFilled": {

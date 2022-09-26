@@ -31,9 +31,3 @@ export default function UseFormControl() {
     </Box>
   );
 }
-
-export function Back() {
-    return (
-      <Link href="/">Back</Link>
-    );
-}

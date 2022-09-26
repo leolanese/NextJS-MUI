@@ -1,5 +1,5 @@
 import useSWR from "swr";
-import {Back} from "utility/helper";
+import {Back} from "utility/Back";
 import {Person} from "../interfaces";
 import PersonComponent from "../utility/Person";
 

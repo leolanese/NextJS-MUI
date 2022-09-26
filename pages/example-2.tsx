@@ -1,9 +1,9 @@
-import {CssBaseline} from "@mui/material";
+import { CssBaseline } from "@mui/material";
 import Box from "@mui/material/Box";
 import ButtonBase from "@mui/material/ButtonBase";
-import {styled} from "@mui/material/styles";
+import { styled } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
-import {Back} from 'utility/helper';
+import { Back } from 'utility/Back';
 
 const images = [
   {

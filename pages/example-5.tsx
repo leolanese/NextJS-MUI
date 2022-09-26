@@ -8,7 +8,7 @@ import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import type {InferGetStaticPropsType} from "next";
-import {Back} from 'utility/helper';
+import {Back} from 'utility/Back';
 import type {Repository} from "../types/github";
 
 export async function getStaticProps() {

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import {Back} from 'utility/helper';
+import {Back} from 'utility/Back';
 
 const Example9 = () => {
   return (
