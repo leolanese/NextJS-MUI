@@ -1,4 +1,6 @@
 import useSWR from "swr";
+import {Person} from "../interfaces";
+import PersonComponent from "../utility/Person";
 
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
@@ -11,11 +13,9 @@ export default function Index() {
 
   return (
     <ul>
-      {/* {
-        
-      data.map((p: Person) => (
+      {data.map((p: Person) => (
         <PersonComponent key={p.id} person={p} />
-      ))} */}
+      ))}
     </ul>
   );
 }
