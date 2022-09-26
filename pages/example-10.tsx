@@ -1,4 +1,5 @@
 import useSWR from "swr";
+import {Back} from "utility/helper";
 import {Person} from "../interfaces";
 import PersonComponent from "../utility/Person";
 
@@ -12,10 +13,15 @@ export default function Index() {
   if (!data) return <div>Loading...</div>;
 
   return (
-    <ul>
-      {data.map((p: Person) => (
-        <PersonComponent key={p.id} person={p} />
-      ))}
-    </ul>
+    <>
+      <div style={{ margin: 30 }}>
+        <Back />
+        <ul>
+          {data.map((p: Person) => (
+            <PersonComponent key={p.id} person={p} />
+          ))}
+        </ul>
+      </div>
+    </>
   );
 }
