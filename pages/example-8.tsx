@@ -24,7 +24,6 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 function Example8() {
-  
   const [values, setValues] = useState([]);
 
   return (
