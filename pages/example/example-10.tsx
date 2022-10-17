@@ -1,7 +1,7 @@
 import useSWR from "swr";
 import {Back} from "utility/Back";
-import {Person} from "../interfaces";
-import PersonComponent from "../utility/Person";
+import {Person} from "../../interfaces";
+import PersonComponent from "../../utility/Person";
 
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
 

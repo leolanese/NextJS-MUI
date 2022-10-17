@@ -17,7 +17,7 @@ export default function Home() {
         <h2>NextJS & MUI</h2>
         <ul>
           <li>
-            <Link href="/example-1">
+            <Link href="/example/example-1">
               <a>
                 MUI AccountCircleIcon, AddShoppingCartIcon, AlarmIcon, AppsIcon
                 , DeleteIcon, PhotoCamera, SendIcon, Box, Button, IconButton,
@@ -28,13 +28,13 @@ export default function Home() {
           </li>
 
           <li>
-            <Link href="/example-2">
+            <Link href="/example/example-2">
               <a>MUI Box, ButtonBase, Typography</a>
             </Link>
           </li>
 
           <li>
-            <Link href="/example-3">
+            <Link href="/example/example-3">
               <a>
                 MUI Typography, StyledRating, Button, Rating, SendIcon,
                 FavoriteBorderIcon, FavoriteIcon
@@ -43,18 +43,18 @@ export default function Home() {
           </li>
 
           <li>
-            <Link href="/example-4">
+            <Link href="/example/example-4">
               <a>MUI TableContainer, Table, TableCell, TableRow</a>
             </Link>
           </li>
           <li>
-            <Link href="/example-5">
+            <Link href="/example/example-5">
               <a>MUI: Card, CardContent, ,Typography</a>
             </Link>
           </li>
 
           <li>
-            <Link href="/example-6">
+            <Link href="/example/example-6">
               <a>
                 MUI: FormControl, Autocomplete, Typography, SvgIcon,
                 SvgIconProps, Container, Link, CssBaseline, OutlinedInput
@@ -63,7 +63,7 @@ export default function Home() {
           </li>
 
           <li>
-            <Link href="/example-7">
+            <Link href="/example/example-7">
               <a>
                 MUI: Autocomplete, Typography, FormControl, InputLabel,
                 ListItemText, MenuItem, OutlinedInput, Select, CssBaseline
@@ -72,7 +72,7 @@ export default function Home() {
           </li>
 
           <li>
-            <Link href="/example-8">
+            <Link href="/example/example-8">
               <a>
                 MUI: Autocomplete, Paper, TextField, CssBaseline, Grid, Stack,
                 Stack, Box, Paper
@@ -81,7 +81,7 @@ export default function Home() {
           </li>
 
           <li>
-            <Link href="/example-9">
+            <Link href="/example/example-9">
               <a>
                 MUI: Fetching API data, Table, TableContainer, TableHead,
                 TableRow, TableBody, TableCell
@@ -90,19 +90,19 @@ export default function Home() {
           </li>
 
           <li>
-            <Link href="/example-10">
+            <Link href="/example/example-10">
               <a>MUI: Fetching API data</a>
             </Link>
           </li>
 
           <li>
-            <Link href="/example-11">
+            <Link href="/example/example-11">
               <a>MUI: Dynamic imports, with and without SSR</a>
             </Link>
           </li>
 
           <li>
-            <Link href="/example-12">
+            <Link href="/example/example-12">
               <a>MUI: Dynamic imports for libraries</a>
             </Link>
           </li>

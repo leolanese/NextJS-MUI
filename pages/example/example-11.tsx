@@ -8,7 +8,7 @@ const Example9 = dynamic(
 );
 
 const Example10 = dynamic(() => 
-  import("../pages/example-10").then((res) => res.default)
+  import("./example-10").then((res) => res.default)
 )
 
 export default function Index() {

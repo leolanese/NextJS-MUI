@@ -1,6 +1,6 @@
 import {useState} from "react";
 import {Back} from 'utility/Back';
-import styles from "../styles/Home.module.css";
+import styles from "../../styles/Home.module.css";
 
 export default function Home() {
   const [search, setSearch] = useState("");
