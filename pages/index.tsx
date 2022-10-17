@@ -85,11 +85,16 @@ export default function Home() {
 
           <li>
             <Link href="/example-10">
-              <a>
-                MUI: Fetching API data
-              </a>
+              <a>MUI: Fetching API data</a>
             </Link>
           </li>
+
+          <li>
+            <Link href="/example-11">
+              <a>MUI: Dynamic imports</a>
+            </Link>
+          </li>
+
         </ul>
       </main>
 
