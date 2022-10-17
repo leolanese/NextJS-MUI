@@ -24,9 +24,7 @@ export default function Home() {
             onClick={async () => {
               // dynamically load the axios dependency
               const axios = (await import("axios")).default;
-              const res = await axios.get(api_url).then((res) => {
-                setResponse(res);
-              });
+              const res = await axios.get(api_url).then((res) => setResponse(res));
             }}
           >
             Search for GitHub users
