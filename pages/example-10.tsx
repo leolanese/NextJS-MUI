@@ -5,7 +5,7 @@ import PersonComponent from "../utility/Person";
 
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
-export default function Index() {
+const Example10 = () => {
   const { data, error } = useSWR("/api/people", fetcher);
 
   if (error) return <div>Failed to load</div>;
@@ -25,4 +25,7 @@ export default function Index() {
       </div>
     </>
   );
-}
+};
+
+
+export default Example10;
