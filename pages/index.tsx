@@ -16,7 +16,6 @@ export default function Home() {
       <main className={styles.main}>
         <h2>NextJS & MUI</h2>
         <ul>
-          
           <li>
             <Link href="/example-1">
               <a>
@@ -102,6 +101,11 @@ export default function Home() {
             </Link>
           </li>
 
+          <li>
+            <Link href="/example-12">
+              <a>MUI: Dynamic imports for libraries</a>
+            </Link>
+          </li>
         </ul>
       </main>
 
