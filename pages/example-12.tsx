@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <div className={styles.main}>
         <Back />
-        <h1>Dynamic imports for libraries</h1>
+        <h2>Dynamic imports for libraries</h2>
         <div>
           <input
             type="text"
@@ -31,22 +31,21 @@ export default function Home() {
           >
             Search for GitHub users
           </button>
-
-          <div>
-            <h1>{search} Results</h1>
-            <ul>
-              {response?.data ? (
-                response &&
-                response?.data.items.map((item, index) => (
-                  <span key={index}>
-                    <p>{item.login}</p>
-                  </span>
-                ))
-              ) : (
-                <p>No Results</p>
-              )}
-            </ul>
-          </div>
+          
+          <h3>[{search}]</h3>
+          <ul>
+           {response?.data ? (
+              response &&
+              response?.data.items.map((item, index) => (
+                <li key={index}>
+                  <p>{item.login}</p>
+                </li>
+              ))
+            ) : (
+              <p>No Results</p>
+            )}
+          </ul>
+ 
         </div>
       </div>
     </>
