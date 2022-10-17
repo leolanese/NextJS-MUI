@@ -16,6 +16,7 @@ export default function Home() {
       <main className={styles.main}>
         <h2>NextJS & MUI</h2>
         <ul>
+          
           <li>
             <Link href="/example-1">
               <a>
@@ -26,11 +27,13 @@ export default function Home() {
               </a>
             </Link>
           </li>
+
           <li>
             <Link href="/example-2">
               <a>MUI Box, ButtonBase, Typography</a>
             </Link>
           </li>
+
           <li>
             <Link href="/example-3">
               <a>
@@ -39,6 +42,7 @@ export default function Home() {
               </a>
             </Link>
           </li>
+
           <li>
             <Link href="/example-4">
               <a>MUI TableContainer, Table, TableCell, TableRow</a>
@@ -49,6 +53,7 @@ export default function Home() {
               <a>MUI: Card, CardContent, ,Typography</a>
             </Link>
           </li>
+
           <li>
             <Link href="/example-6">
               <a>
@@ -57,6 +62,7 @@ export default function Home() {
               </a>
             </Link>
           </li>
+
           <li>
             <Link href="/example-7">
               <a>
@@ -65,6 +71,7 @@ export default function Home() {
               </a>
             </Link>
           </li>
+
           <li>
             <Link href="/example-8">
               <a>
@@ -91,7 +98,7 @@ export default function Home() {
 
           <li>
             <Link href="/example-11">
-              <a>MUI: Dynamic imports</a>
+              <a>MUI: Dynamic imports, with and without SSR</a>
             </Link>
           </li>
 

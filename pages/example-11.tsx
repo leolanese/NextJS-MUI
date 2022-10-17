@@ -1,8 +1,10 @@
 import dynamic from "next/dynamic";
 import {Suspense} from "react";
 
-const Example9 = dynamic(() =>
-  import("./example-9").then((res) => res.default)
+const Example9 = dynamic(
+  () => import("./example-9").then((res) => res.default),
+  { ssr: false }
+  // disable server-side rendering for imported components and render these components on the client-side instead
 );
 
 const Example10 = dynamic(() => 
@@ -10,7 +12,6 @@ const Example10 = dynamic(() =>
 )
 
 export default function Index() {
-
   return (
     <>
       <div style={{ margin: 30 }}>
