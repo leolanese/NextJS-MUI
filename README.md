@@ -17,6 +17,8 @@ yarn add -D typescript @types/react @types/node
 $ touch tsconfig.json
 ```
 
+---
+
 ## Setup Storybook
 
 ```js
@@ -103,3 +105,23 @@ storiesOf("Button", module).add("with emoji", () => {
 // Happy coding
 yarn storybook
 ```
+
+---
+
+## Update NextJS to latest
+
+```js
+npm i next@latest react@latest react-dom@latest eslint-config-next@latest
+```
+
+```js
+npx @next/codemod new-link .
+```
+
+```js
+npm run dev
+http://localhost:3000/
+```
+
+---
+

@@ -18,92 +18,80 @@ export default function Home() {
         <ul>
           <li>
             <Link href="/example/example-1">
-              <a>
                 MUI AccountCircleIcon, AddShoppingCartIcon, AlarmIcon, AppsIcon
                 , DeleteIcon, PhotoCamera, SendIcon, Box, Button, IconButton,
                 Stack, FormControl, FormHelperText, InputLabel, MenuItem,
                 Select, Switch, TextField,
-              </a>
             </Link>
           </li>
 
           <li>
             <Link href="/example/example-2">
-              <a>MUI Box, ButtonBase, Typography</a>
+              MUI Box, ButtonBase, Typography
             </Link>
           </li>
 
           <li>
             <Link href="/example/example-3">
-              <a>
                 MUI Typography, StyledRating, Button, Rating, SendIcon,
                 FavoriteBorderIcon, FavoriteIcon
-              </a>
             </Link>
           </li>
 
           <li>
             <Link href="/example/example-4">
-              <a>MUI TableContainer, Table, TableCell, TableRow</a>
+              MUI TableContainer, Table, TableCell, TableRow
             </Link>
           </li>
           <li>
             <Link href="/example/example-5">
-              <a>MUI: Card, CardContent, ,Typography</a>
+              MUI: Card, CardContent, ,Typography
             </Link>
           </li>
 
           <li>
             <Link href="/example/example-6">
-              <a>
                 MUI: FormControl, Autocomplete, Typography, SvgIcon,
                 SvgIconProps, Container, Link, CssBaseline, OutlinedInput
-              </a>
             </Link>
           </li>
 
           <li>
             <Link href="/example/example-7">
-              <a>
                 MUI: Autocomplete, Typography, FormControl, InputLabel,
                 ListItemText, MenuItem, OutlinedInput, Select, CssBaseline
-              </a>
             </Link>
           </li>
 
           <li>
             <Link href="/example/example-8">
-              <a>
                 MUI: Autocomplete, Paper, TextField, CssBaseline, Grid, Stack,
                 Stack, Box, Paper
-              </a>
             </Link>
           </li>
 
           <li>
             <Link href="/example/example-9">
-              <a>
                 MUI: Fetching API data, Table, TableContainer, TableHead,
                 TableRow, TableBody, TableCell
-              </a>
             </Link>
           </li>
 
           <li>
             <Link href="/example/example-10">
-              <a>MUI: Fetching API data</a>
+              MUI: Fetching API data
             </Link>
           </li>
 
           <li>
             <Link href="/example/example-11">
-              <a>MUI: Dynamic imports, with and without SSR</a>
+              MUI: Dynamic imports, with and without SSR
             </Link>
           </li>
 
           <li>
             <Link href="/example/example-12">
-              <a>MUI: Dynamic imports for libraries</a>
+              MUI: Dynamic imports for libraries
             </Link>
           </li>
         </ul>
